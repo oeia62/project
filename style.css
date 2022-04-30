@@ -1,5 +1,11 @@
+@font-face {
+    font-family: "RedHatDisplay";
+    src: url("RedHatDisplay-VariableFont_wght.ttf") format("ttf"),
+    }
+
 body {
     background-image: url(pattern-background-desktop.svg);
+    background-color: #dfe8ff;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: contain;
@@ -8,16 +14,17 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0px;
+    font-family: "RedHatDisplay";
 }
   
 
-.parent {
-    /*height: 600px;
+/*.parent {
+    height: 600px;
     width: 400px;
     background: #cccccc;
     display: flex;
     align-items: center;
-    justify-content: center;*/
+    justify-content: center;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -45,13 +52,13 @@ title {
   width: 100%;
   text-align: center;
   font-size: 18px;
-}
+}*/
 
 .card {
     display: flex;
     flex-direction: column;
-    max-width: 500px;
-    background-color: rgb(224, 160, 160);
+    max-width: 450px;
+    background-color: rgb(255, 255, 255);
     border-radius: 15px;
     overflow: hidden;
 }
@@ -67,8 +74,20 @@ title {
 
 .price {
 display: flex;
-flex-direction: row;
+align-items: center;
+justify-content: space-between;
+background-color: #F8F9FE;
+border-radius: 20px;
+padding: 30px 25px 30px 25px;
 }
+
+.price div:first-child {
+display: flex;
+flex-direction: row;
+align-items: center;
+/*margin: 5px 10px 5px 30px;*/
+font-size: 18px;
+}    
 
 .button {
     display: flex;
@@ -78,3 +97,46 @@ flex-direction: row;
 .text {
 text-align: center;
 } 
+
+.button button:first-child {
+background-color: blue;
+color: white;
+border-radius: 10px;
+border: none;
+padding: 15px;
+font-size: 16px;
+font-weight: 600;
+margin: 20px 0px 20px 0px;
+box-shadow: 0px 25px 40px #DCDAF8;
+}   
+
+.button button:last-child {
+border: none;
+background-color: transparent;
+font-size: 16px;
+font-weight: 600;
+margin: 20px 0px 10px 0px;
+} 
+
+.pricetext h3,
+.pricetext p {
+margin: 0px;
+} 
+
+.price a {
+color: blue;
+font-size: 18px;
+font-weight: 400;
+text-decoration: underline;
+} 
+
+.pricetext {
+padding-left: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    main {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }

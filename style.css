@@ -1,7 +1,35 @@
-@font-face {
+/*@font-face {
     font-family: "RedHatDisplay";
-    src: url("RedHatDisplay-VariableFont_wght.ttf") format("ttf"),
+    src: url("RedHatDisplay-VariableFont_wght.ttf") format("ttf");
     }
+
+@font-face {
+        src: url(RedHatDisplay-Italic-VariableFont_wght.ttf);
+        font-family:'RedHatDisplay';
+        font-style: normal;
+        font-family: 'RedHatDisplay';
+    } */
+
+@font-face {
+        src: url(RedHatDisplay-Black.ttf);
+        font-family:'RedHatDisplay';
+        font-style: normal;
+        font-weight:900;
+      }
+
+@font-face {
+        src: url(RedHatDisplay-Bold.ttf);
+        font-family:'RedHatDisplay';
+        font-style: normal;
+        font-weight:700;
+      }
+
+@font-face {
+        src: url(RedHatDisplay-Medium.ttf);
+        font-family:'RedHatDisplay';
+        font-style: normal;
+        font-weight:500;
+      }
 
 body {
     background-image: url(pattern-background-desktop.svg);
@@ -14,45 +42,13 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0px;
-    font-family: "RedHatDisplay";
-}
-  
-
-/*.parent {
-    height: 600px;
-    width: 400px;
-    background: #cccccc;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 10px;
-    background-color: rgb(255, 255, 255);
-    width: 350px;
-    height: 550px;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.child {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 370px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-
-title {
-  position: absolute;
-  top: 500px;
-  width: 100%;
-  text-align: center;
-  font-size: 18px;
-}*/
+h2 {
+    font-family: 'RedHatDisplay', sans-serif;    
+font-weight: 900;
+color: rgba(25, 43, 76, 1);
+} 
 
 .card {
     display: flex;
@@ -69,7 +65,7 @@ title {
 } 
 
 .text_container {
-    margin: 40px;
+    margin: 50px;
 }
 
 .price {
@@ -85,17 +81,34 @@ padding: 30px 25px 30px 25px;
 display: flex;
 flex-direction: row;
 align-items: center;
-/*margin: 5px 10px 5px 30px;*/
 font-size: 18px;
 }    
 
 .button {
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
 }   
+
+p {
+    font-family: 'RedHatDisplay', sans-serif;    
+font-weight: 500;
+color: rgba(132, 134, 155, 1);
+line-height: 160%;
+font-size: 16px;
+}
+
+h3 {
+    font-family: 'RedHatDisplay', sans-serif;    
+font-weight: 900;
+font-size: 16px;
+color: rgba(25, 43, 76, 1);
+}
 
 .text {
 text-align: center;
+/*font: 'RedHatDispla', sans-serif;
+font-weight: 900;
+font-style: normal;*/
 } 
 
 .button button:first-child {
@@ -104,7 +117,7 @@ color: white;
 border-radius: 10px;
 border: none;
 padding: 15px;
-font-size: 16px;
+font-size: 15px;
 font-weight: 600;
 margin: 20px 0px 20px 0px;
 box-shadow: 0px 25px 40px #DCDAF8;
@@ -113,9 +126,10 @@ box-shadow: 0px 25px 40px #DCDAF8;
 .button button:last-child {
 border: none;
 background-color: transparent;
-font-size: 16px;
+font-size: 15px;
 font-weight: 600;
 margin: 20px 0px 10px 0px;
+color: rgba(103, 114, 142, 1);
 } 
 
 .pricetext h3,
@@ -124,10 +138,11 @@ margin: 0px;
 } 
 
 .price a {
-color: blue;
-font-size: 18px;
-font-weight: 400;
+font-family: 'RedHatDisplay', sans-serif;    
 text-decoration: underline;
+font-weight: 700;
+color: rgba(59, 49, 171, 1);
+font-size: 15px;
 } 
 
 .pricetext {
@@ -138,5 +153,5 @@ padding-left: 20px;
     main {
       margin-left: 10px;
       margin-right: 10px;
-    }
-  }
+}
+ }
